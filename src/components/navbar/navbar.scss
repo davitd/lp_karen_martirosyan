@@ -1,0 +1,13 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 3.2vw;
+
+    svg {
+        margin-right: 7.5vw;
+        width: 13vw;
+        height: 5.5vw;
+    }
+}

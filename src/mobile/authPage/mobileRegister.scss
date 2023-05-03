@@ -1,0 +1,183 @@
+.container-auth {
+    margin-top: 64px;
+    background: #FEF6F0;
+    box-shadow: 0px 0px 24px rgba(91, 105, 152, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+    height: 228px;
+
+    .wrapper {
+        .title {
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #3E352F;
+        }
+
+        .box-input {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 19px;
+            color: #3E352F;
+
+            .select {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: 2px solid #F6A95F;
+                font-size: 12px;
+                line-height: 16px;
+                border-radius: 8px;
+                padding: 5px 0;
+                width: 100%;
+
+                .option {
+                    position: absolute;
+                    width: 100%;
+                    top: 100%;
+                    background: #FEF6F0;
+                    z-index: 2;
+                    padding: 5px;
+                }
+            }
+
+            label {
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 19px;
+                color: #3E352F;
+            }
+
+            div {
+                width: 100%;
+                position: relative;
+
+                .input {
+
+                    border: 2px solid #F6A95F;
+                    border-radius: 12px;
+                    font-weight: 800;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 5px 0.9rem;
+                    width: 100%;
+
+
+                }
+
+                .visibility {
+                    position: absolute;
+                    width: 20px;
+                    height: 100%;
+                    top: 3px;
+                    right: 15px;
+                    z-index: 1;
+                    cursor: pointer;
+
+                    svg {
+                        width: 18px;
+                    }
+
+                    span {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        left: 0;
+                        top: calc(50% - 2.4px);
+                        transform: rotate(45deg);
+                        background: #143E66;
+                        cursor: pointer;
+                        z-index: 2;
+                    }
+                }
+            }
+
+
+            .text-info {
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 11px;
+                padding-left: 0.9rem;
+                color: #3E352F;
+            }
+        }
+
+        .submit {
+            position: relative;
+            background: #CBC8C5;
+            border: 1px solid #CBC8C5;
+            border-radius: 8px;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 14px;
+            text-transform: uppercase;
+            padding: 6px;
+            color: #3E352F;
+            margin-top: 12px;
+
+            &:after {
+                content: "";
+                width: 14px;
+                height: 12px;
+                position: absolute;
+                background: url("../../accept/svg/mobileArrow.svg") no-repeat center;
+                left: calc(50% + 20px);
+                z-index: 1;
+            }
+        }
+
+        .back {
+            &:after {
+                content: "";
+                transform: rotate(180deg);
+                left: calc(50% - 34px);
+            }
+        }
+
+        .active {
+            background: #F6A95F;
+            border: 2px solid #F6A95F;
+        }
+
+        .nextOrBack {
+            display: flex;
+            width: 100%;
+            gap: 12px;
+        }
+
+        .step {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 36px;
+            gap: 16px;
+        }
+
+        .text-center {
+            text-align: center;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 16px;
+            color: #3E352F;
+
+            span {
+                text-decoration-line: underline;
+                color: #585DEC;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

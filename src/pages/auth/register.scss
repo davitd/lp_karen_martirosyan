@@ -1,0 +1,190 @@
+.container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 50px;
+    background: #FEF6F0;
+    box-shadow: 0px 0px 30px rgba(91, 105, 152, 0.2);
+    border-radius: 16px;
+    width: 612px;
+
+    .text-center {
+        text-align: center;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #3E352F;
+
+
+        span {
+            text-decoration-line: underline;
+            color: #585DEC;
+            cursor: pointer;
+        }
+    }
+
+    .title {
+        font-weight: 800;
+        font-size: 1.9rem;
+        line-height: 41px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #3E352F;
+    }
+
+    .container-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+        width: 100%;
+        height: 100%;
+
+        .box-input {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            gap: 24px;
+
+            div {
+                position: relative;
+
+                .visibility {
+                    position: absolute;
+                    right: 1rem;
+                    top: calc(50% - 12.5px);
+                    width: 25px;
+                    height: 25px;
+                    z-index: 1;
+                    cursor: pointer;
+
+                    span {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        left: 0;
+                        top: calc(50% - 2.4px);
+                        transform: rotate(45deg);
+                        background: #143E66;
+                        cursor: pointer;
+                        z-index: 2;
+                    }
+                }
+
+
+            }
+
+            label {
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 22px;
+                flex: none;
+            }
+
+            .input {
+                border: 2px solid #F6A95F;
+                border-radius: 12px;
+                padding: 0.9rem;
+                width: 23.8rem;
+                cursor: pointer;
+            }
+
+            .text-info {
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 11px;
+                padding-left: 0.9rem;
+                color: #3E352F;
+            }
+
+            .message {
+                font-weight: 800;
+                color: #D50000;
+                max-width: 21rem;
+            }
+
+            .select {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .revers {
+                    transform: rotate(180deg);
+                }
+
+                .option {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    top: 49px;
+                    left: 0;
+                    width: 100%;
+                    height: 100px;
+                    overflow-y: auto;
+                    background: #fff;
+                    border-radius: 0 0 8px 8px;
+                    z-index: 1;
+
+                    div {
+                        padding: 0.3rem 0.9rem;
+
+                        &:hover {
+                            background: #FEF6F0;
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+
+    }
+
+
+    .submit {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #3E352F;
+        padding: 10px 30px;
+        background: #F6A95F;
+        border: 1px solid #F6A95F;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .box-svg {
+        display: none;
+    }
+
+    .container-img {
+        svg {
+            width: 100%;
+        }
+    }
+
+    .form-container {
+        font-size: 10px;
+        width: 100%;
+
+        .title {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}
