@@ -4,6 +4,7 @@ import MobileRegister from './mobile/authPage/MobileRegister';
 import Navbar from './components/navbar/Navbar';
 import ContainerImg from './components/containerImg/ContainerImg';
 import { Loading } from './components/loading/Loading';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         {mobile ? <MobileRegister /> : <Register />}
         <ContainerImg />
       </main>
-
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #3E352F;
+
+    .footer-bar {
+        display: flex;
+        gap: 40px;
+        text-decoration-line: underline;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        .footer-bar {
+            display: none;
+        }
+    }
+
+}
